@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Raleway:wght@300;400;500;600&display=swap');
+
+/* =================================================
+             -----Google Fonts End -----
+    ================================================= */
+*{
+	margin: 0px;
+	padding: 0px;
+	outline: 0px;
+}
+
+ul,ol{
+	list-style: none;
+}
+a,a:hover{
+	text-decoration: none;
+}
+img{
+	border:none;
+	vertical-align: middle;
+}
+ h1,h2,h3,h4,h5,h6,a,p,ol,ul,li,img,.navbar{
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+ body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+ }
+
+
+ /* =================================================
+              ------Common CSS end-----
+    ================================================= */
+
+.navPart{
+    padding: 30px 0px;
+    background-color:none;
+    width: 100%;
+    position:
+    z-index: 1;
+}
+.navPart ul li {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    transition: .5s all linear;
+    
+}
+.navPart ul li.active,
+.navPart ul li:hover{
+    border: 2px solid  #1769ff;
+}
+.navPart ul li a{
+    color: black;
+    font-weight: 500;
+}
+/*navbar css end*/
+.sliderPart{
+    background: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.sliderPart .sliderOverlay{
+     background: rgba(0, 0, 0, .3);
+     padding: 100px 0px;
+}
+.sliderPart .photo img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 7px solid white;
+
+
+}
+.sliderPart .right-part{
+    color: white;
+    margin-top: 120px;
+}
+.sliderPart .right-part h3 span{
+    color: yellow;
+}
+/*slider css end*/
+.services h3{
+    padding: 80px 0px 40px 0px;
+}
+.services .sContent{
+    padding: 46px 60px;
+    transition: .3s all linear;
+}
+.services .sContent:hover{
+    background-color: #1769ff;
+    color: white;
+}
+.services .sContent i{
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+.services .sContent img{
+    padding-bottom: 10px;
+}
+/*services css end*/
+.portfolio{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.portfolio .hd{
+    padding-bottom: 60px;
+    font-size:40px;
+    font-weight:700;
+}
+.portfolio .port-item{
+    position: relative;
+    margin-bottom: 20px;
+}
+.portfolio .port-overlay{
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    background: rgba(0,0,0, .35);
+    position: absolute;
+    top:0;
+    left:0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all linear 0.3s;
+}   
+.portfolio .port-overlay a{
+  color: #fff;
+  font-size: 10px;
+  font-family: 'Poppins', sans-serif;
+
+}
+.portfolio .port-item:hover .port-overlay{
+  opacity: 1;
+  height: 100%;
+}
+/*portfolio css end*/
+.hirePart{
+    padding: 80px 0px;
+}
+.hirePart .buttonPart button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 15px;
+    background-color: #1769ff;
+    transition: .3s all linear;
+}
+.hirePart .buttonPart button:hover{
+    background-color: tomato;
+}
+.hirePart .buttonPart button a{
+    color: white;
+}
+/*hire me css end*/
+.clientFeedback {
+    background-color: #f4f4f4;
+    padding: 50px 0px;
+}
+.clientFeedback h1{
+    padding-bottom: 0px;
+}
+.clientFeedback .custom{
+    height: 200px;
+    width: 100%
+}
+.clientFeedback .custom h6{
+    padding-bottom: 20px;
+}
+.clientFeedback .custom h4{
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+.clientFeedback .custom img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.clientFeedback .carousel-inner{
+    padding: 60px 0px 120px 0px;
+}
+
+/*client says css end*/
+.footerPart h4 {
+    padding-top: 80px;
+}
+.footerPart .socialIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+.footerPart .socialIcon .icon{
+    margin-right: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color:#718093;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s all linear;
+}
+.footerPart .socialIcon .icon i{
+    color: white;
+}
+.footerPart .socialIcon .icon:hover{
+    background-color: #1769ff;
+}
+.footerPart .socialIcon .icon1{
+    margin-right: 0px;
+}
+/*footer social icon end*/
+.copyright{
+    padding: 30px 0px;
+    color: black;
+    background-color: #f4f4f4;
+}
+/*copyright info end*/
